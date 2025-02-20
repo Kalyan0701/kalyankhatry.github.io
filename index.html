@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Kalyan Khatry - Data Scientist, ML Engineer, and Analyst">
+    <meta name="keywords" content="data science, machine learning, portfolio, Kalyan Khatry">
+    <meta property="og:title" content="Kalyan Khatry | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Portfolio of Kalyan Khatry - Data Scientist, ML Engineer, and Analyst">
+    <meta property="og:image" content="https://yourdomain.com/profile.webp">
+    <meta property="og:url" content="https://yourdomain.com">
+    <title>Kalyan Khatry | Data Scientist & ML Engineer</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Scroll Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+        <div id="progress-bar" class="h-full bg-teal-600 transition-all duration-300"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav role="banner" class="sticky-nav bg-gradient-to-r from-teal-800 to-blue-700 text-white shadow-lg" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center gap-2">
+                <span class="text-orange-400">KK</span> <!-- Brand initials -->
+                <span>Kalyan Khatry</span>
+            </div>
+            <button class="md:hidden text-white" aria-label="Toggle menu" id="menu-toggle">
+                <i class="fas fa-bars text-2xl transform transition-transform duration-300 hamburger"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center" id="nav-links">
+                <li><a href="#home" class="hover:text-orange-400 transition-colors underline-animation">Home</a></li>
+                <li><a href="#about" class="hover:text-orange-400 transition-colors underline-animation">About</a></li>
+                <li><a href="#skills" class="hover:text-orange-400 transition-colors underline-animation">Skills</a></li>
+                <li><a href="#experience" class="hover:text-orange-400 transition-colors underline-animation">Experience</a></li>
+                <li><a href="#projects" class="hover:text-orange-400 transition-colors underline-animation">Projects</a></li>
+                <li><a href="#contact" class="hover:text-orange-400 transition-colors underline-animation">Contact</a></li>
+                <li><button id="darkModeToggle" class="bg-orange-500 text-white px-3 py-1 rounded hover:bg-orange-600 transition-colors transform hover:scale-105">Dark Mode</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-teal-900 to-indigo-600 text-white py-24 px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <img src="profile.png" alt="Kalyan Khatry" 
+                     class="rounded-full w-48 h-48 mx-auto mb-6 border-4 border-white shadow-xl animate-float"
+                     loading="lazy">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Kalyan Khatry</h1>
+                <p class="text-xl md:text-2xl mb-6 typewriter"></p>
+                <div class="flex justify-center gap-4">
+                    <a href="#projects" 
+                       class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-all"
+                       target="_blank" rel="noopener noreferrer">
+                       Explore My Work
+                    </a>
+                    <a href="/assets/resume.pdf" 
+                       class="bg-white text-teal-900 px-6 py-3 rounded-full hover:bg-gray-200 transition-all"
+                       download="Kalyan_Khatry_Resume.pdf">
+                       Download Resume
+                    </a>
+                </div>
+            </div>  
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-white py-16 px-8">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl font-bold mb-6 text-teal-900">About Me</h2>
+                <p class="text-lg mb-4">Master of Science in Data Science (CGPA 3.9) from University of New Haven. Data Science and Engineering professional with 2+ years of experience in data analysis, machine learning, and business intelligence. Proficient in Python, SQL, Power BI, AWS, and predictive modeling, with a strong background in data engineering, ETL processes, and deep learning.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div><span class="font-bold text-teal-900">5+</span> Years in Data Roles</div>
+                    <div><span class="font-bold text-teal-900">10+</span> ML Projects Deployed</div>
+                    <div><span class="font-bold text-teal-900">3+</span> Certifications</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-gray-100 py-16 px-8">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl font-bold mb-6 text-teal-900">Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="skill-card"><i class="fab fa-python text-teal-900 text-3xl mb-2"></i><p>Python</p></div>
+                    <div class="skill-card"><i class="fas fa-database text-teal-900 text-3xl mb-2"></i><p>SQL</p></div>
+                    <div class="skill-card"><i class="fab fa-r-project text-teal-900 text-3xl mb-2"></i><p>R</p></div>
+                    <div class="skill-card"><i class="fas fa-brain text-teal-900 text-3xl mb-2"></i><p>TensorFlow</p></div>
+                    <div class="skill-card"><i class="fas fa-chart-bar text-teal-900 text-3xl mb-2"></i><p>Power BI</p></div>
+                    <div class="skill-card"><i class="fab fa-aws text-teal-900 text-3xl mb-2"></i><p>AWS</p></div>
+                    <div class="skill-card"><i class="fas fa-code text-teal-900 text-3xl mb-2"></i><p>Scikit-learn</p></div>
+                    <div class="skill-card"><i class="fas fa-fire text-teal-900 text-3xl mb-2"></i><p>Apache Spark</p></div>
+                    <div class="skill-card"><i class="fas fa-table text-teal-900 text-3xl mb-2"></i><p>Excel</p></div>
+                    <div class="skill-card"><i class="fas fa-tasks text-teal-900 text-3xl mb-2"></i><p>Jira</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="bg-white py-16 px-8">
+            <div class="max-w-4xl mx-auto fade-in">
+                <h2 class="text-3xl font-bold mb-8 text-center text-teal-500" role="heading" aria-level="2">Professional Experience</h2>
+                
+                <div class="space-y-8">
+                    <article class="exp-card border-l-4 border-teal-500 bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all" role="region" aria-label="Data Analyst Intern experience">
+                        <div class="flex justify-between items-start">
+                            
+                            <div>
+                                <h3 class="text-xl font-semibold text-teal-500">Data Analyst Intern</h3>
+                                <p class="text-lg font-medium text-teal-500">Downtown Evening Soup Kitchen, Inc</p>
+                            </div>
+                            <p class="text-sm text-gray-600">Jan 2025 - Present | New Haven, CT</p>
+                        </div>
+                        <ul class="list-disc ml-6 mt-4 text-gray-600">
+                            <li>Automated workflows using Zapier, Python, and Excel macros, integrating 4 business systems and reducing reporting time by 17%, saving 25+ hours weekly.</li>
+                            <li>Developed Power BI dashboards with custom DAX measures and predictive analytics, enhancing KPI clarity by 15% across 3 departments.</li>
+                            <li>Implemented data validation with Cognito Forms and MSSQL, improving accuracy by 5% across 30,000+ monthly records.</li>
+                        </ul>
+                    </article>
+                    <!-- Repeat for other experience entries (e.g., Research Assistant, Graduate Assistant, Associate Data Engineer) -->
+                    <article class="exp-card border-l-4 border-teal-500 bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all" role="region" aria-label="Research Assistant experience">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-teal-500">Research Assistant</h3>
+                                <p class="text-lg font-medium text-teal-500">University of New Haven - Construction Engineering</p>
+                            </div>
+                            <p class="text-sm text-gray-600">Sep 2024 - Present | West Haven, CT</p>
+                        </div>
+                        <ul class="list-disc ml-6 mt-4 text-gray-600">
+                            <li>Developed deep learning models (CNN, CvT, RvT) in Python and TensorFlow, improving structural anomaly detection in bridge images by 7%.</li>
+                            <li>Performed EDA on aerial bridge datasets with Pandas and NumPy, identifying features that boosted predictive performance by 15%.</li>
+                            <li>Collaborated with a cross-disciplinary team to optimize model parameters and enhance inspection system effectiveness.</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card border-l-4 border-teal-500 bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all" role="region" aria-label="Graduate Assistant experience">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-teal-500">Graduate Assistant</h3>
+                                <p class="text-lg font-medium text-teal-500">University of New Haven</p>
+                            </div>
+                            <p class="text-sm text-gray-600">Mar 2024 - Present | West Haven, CT</p>
+                        </div>
+                        <ul class="list-disc ml-6 mt-4 text-gray-600">
+                            <li>Analyzed admissions data using Slate CRM and MySQL, identifying trends that enhanced student engagement by 9%.</li>
+                            <li>Built automated Power BI dashboards for admissions metrics, improving team efficiency by 15% and saving 10+ hours weekly.</li>
+                            <li>Applied machine learning to Slate data, identifying 800+ high-potential candidates and boosting applications by 25%.</li>
+                        </ul>
+                    </article>
+                    <article class="exp-card border-l-4 border-teal-500 bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all" role="region" aria-label="Associate Data Engineer experience">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-teal-500">Associate Data Engineer</h3>
+                                <p class="text-lg font-medium text-teal-500">Krispcall Pte. Ltd</p>
+                            </div>
+                            <p class="text-sm text-gray-600">Jul 2023 - Dec 2023 | Singapore</p>
+                        </div>
+                        <ul class="list-disc ml-6 mt-4 text-gray-600">
+                            <li>Integrated Mixpanel with Python for automated data retrieval and analysis, enabling customer insights and market pricing strategies, resulting in a 7% increase in customer acquisition.</li>
+                            <li>Led an in-depth analysis of user interactions using Mixpanel and custom Python scripts, identifying and addressing over 20 instances of fraud, enhancing platform security by 9%.</li>
+                            <li>Enhanced data workflow efficiencies by developing and optimizing ETL processes, resulting in a 25% increase in data processing speeds and supporting faster, more informed business decisions.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gradient-to-b from-teal-50 to-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center text-teal-500">
+                    Featured Projects
+                    <span class="block mt-2 h-1 w-16 bg-teal-600 mx-auto rounded-full"></span>
+                </h2>
+        
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project Card 1 -->
+                    <article class="group relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 ease-out overflow-hidden">
+                        <a href="https://github.com/Kalyan0701/Breast-Cancer-Detection-using-CNN" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="block p-6"
+                           aria-label="Breast Cancer Detection System project details">
+                            <div class="mb-4 flex justify-center">
+                                <div class="w-20 h-20 bg-teal-100 rounded-xl p-3 group-hover:scale-105 transition-transform">
+                                    <img src="assets/python.png" 
+                                         alt="Python logo" 
+                                         class="object-contain h-full w-full"
+                                         loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-teal-700 transition-colors">
+                                Breast Cancer Detection
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-snug mb-4">
+                                CNN architectures for early-stage breast cancer classification using deep learning.
+                            </p>
+                            <div class="flex flex-wrap gap-2 justify-center">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">Keras</span>
+                            </div>
+                        </a>
+                    </article>
+        
+                    <!-- Project Card 2 -->
+                    <article class="group relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 ease-out overflow-hidden">
+                        <a href="https://github.com/Kalyan0701/Youtube-Data-Engineering" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="block p-6"
+                           aria-label="YouTube Data Engineering project details">
+                            <div class="mb-4 flex justify-center">
+                                <div class="w-20 h-20 bg-blue-100 rounded-xl p-3 group-hover:scale-105 transition-transform">
+                                    <img src="assets/aws.png" 
+                                         alt="AWS logo" 
+                                         class="object-contain h-full w-full"
+                                         loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-blue-700 transition-colors">
+                                YouTube Data Pipeline
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-snug mb-4">
+                                ETL pipeline for YouTube analytics using AWS and BigQuery.
+                            </p>
+                            <div class="flex flex-wrap gap-2 justify-center">
+                                <span class="tech-badge">AWS</span>
+                                <span class="tech-badge">BigQuery</span>
+                                <span class="tech-badge">Airflow</span>
+                            </div>
+                        </a>
+                    </article>
+        
+                    <!-- Project Card 3 -->
+                    <article class="group relative bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 ease-out overflow-hidden">
+                        <a href="https://github.com/Kalyan0701/Sales-Analysis-PowerBI" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="block p-6"
+                           aria-label="Sales Analysis Dashboard project details">
+                            <div class="mb-4 flex justify-center">
+                                <div class="w-20 h-20 bg-orange-100 rounded-xl p-3 group-hover:scale-105 transition-transform">
+                                    <img src="assets/powerbi.png" 
+                                         alt="Power BI logo" 
+                                         class="object-contain h-full w-full"
+                                         loading="lazy">
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2 group-hover:text-orange-700 transition-colors">
+                                Sales Analytics Dashboard
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-snug mb-4">
+                                Interactive BI dashboard with DAX calculations and data modeling.
+                            </p>
+                            <div class="flex flex-wrap gap-2 justify-center">
+                                <span class="tech-badge">Power BI</span>
+                                <span class="tech-badge">DAX</span>
+                                <span class="tech-badge">SQL</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+        
+                <!-- Compact CTA Section -->
+                <div class="mt-12 text-center">
+                    <a href="https://github.com/Kalyan0701" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-colors group">
+                        <span>View All Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+                   
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-teal-900 text-white py-16 px-8">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                <p class="mb-4">kalyankhatry@outlook.com | +1 (203) 887-9688</p>
+                <form id="contactForm" class="max-w-md mx-auto space-y-4">
+                    <div>
+                        <label for="name" class="sr-only">Name</label>
+                        <input id="name" type="text" name="name" placeholder="Name" class="w-full p-3 rounded-lg text-gray-800" required>
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Email" class="w-full p-3 rounded-lg text-gray-800" required>
+                    </div>
+                    <div>
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" class="w-full p-3 rounded-lg text-gray-800 h-32" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-all transform hover:scale-105">Send Message</button>
+                </form>
+                <div class="mt-6 flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/in/kalyan-khatry-9aa49a211/" class="text-2xl hover:text-orange-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Kalyan0701" class="text-2xl hover:text-orange-400 transition-colors"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="bg-gray-800 text-white py-4 text-center">
+        <p>© 2025 Kalyan Khatry. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-4 right-4 bg-teal-700 text-white p-3 rounded-full shadow-lg hidden hover:bg-teal-800 transition-all transform hover:scale-105">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="scripts.js" defer></script>
+</body>
+</html>
